@@ -7,7 +7,15 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
+::-moz-selection { /* Code for Firefox */
+  color: #101626;
+  background: #FBB83B;
+}
 
+::selection {
+  color: #101626;
+  background: #FBB83B;
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -24,4 +32,22 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+.container{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 96px;
+  @media only screen and (max-width: 1500px) {
+    max-width: 1500px;
+    padding-inline: 1 rem;
+  }
+  @media only screen and (max-width: 1280px) {
+    max-width: 1280px;
+    padding-inline: 1 rem;
+  }
+  @media only screen and (max-width: 1024px) {
+    max-width: 1024px;
+    padding-inline: 1 rem;
+  }
 }
